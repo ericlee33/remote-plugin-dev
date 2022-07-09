@@ -1,0 +1,12 @@
+{
+  "name": "anyproxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ericlee33",
+  "license": "ISC"
+}
