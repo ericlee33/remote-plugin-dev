@@ -1,3 +1,4 @@
+/* eslint-disable array-bracket-spacing */
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
 
 export default (appInfo: EggAppInfo) => {
@@ -8,7 +9,7 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1657347265226_9446';
 
   // add your egg config in here
-  config.middleware = [];
+  config.middleware = ['cors'];
 
   // add your special config in here
   const bizConfig = {

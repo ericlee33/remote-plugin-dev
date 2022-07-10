@@ -1,4 +1,3 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -8,7 +7,6 @@ module.exports = {
   },
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'test'),
     filename: '[name].bundle.js',
     libraryTarget: 'commonjs',
   },
@@ -17,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './template/index.html',
+      template: './public/index.html',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -43,8 +41,6 @@ module.exports = {
     ],
   },
   resolve: {
-    alias: {
-      'remote-component.config.js': __dirname + '/remote-component.config.js',
-    },
+    extensions: ['js', 'ts', 'tsx', 'json', 'jsx'].map((ext) => `.${ext}`),
   },
 };

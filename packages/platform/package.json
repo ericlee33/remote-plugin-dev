@@ -22,10 +22,8 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@arco-design/web-react": "^2.37.0",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "antd": "^4.21.5",
     "css-loader": "^6.7.1",
     "dayjs": "^1.11.3",
     "https-browserify": "^1.0.0",

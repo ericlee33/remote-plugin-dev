@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './template/index.html',
+      template: './public/index.html',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -40,10 +40,11 @@ module.exports = {
     alias: {
       'remote-component.config.js': __dirname + '/remote-component.config.js',
     },
-    // fallback: {
-    //   https: require.resolve('https-browserify'),
-    //   url: require.resolve('url/'),
-    //   http: require.resolve('stream-http'),
-    // },
+    extensions: ['js', 'ts', 'tsx', 'json', 'jsx'].map((ext) => `.${ext}`),
+    fallback: {
+      https: require.resolve('https-browserify'),
+      url: require.resolve('url/'),
+      http: require.resolve('stream-http'),
+    },
   },
 };

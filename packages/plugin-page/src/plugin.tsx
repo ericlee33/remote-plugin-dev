@@ -1,17 +1,16 @@
 import React from 'react';
 import './test.css';
-import { Card } from 'antd';
 
 const Plugin: React.FC<{}> = () => {
   return (
-    <Card
+    <div
       style={{
         color: 'red',
         fontSize: '32px',
       }}
     >
-      这个是远程导入的插件组件
-    </Card>
+      这个是远程加载的插件组件
+    </div>
   );
 };
 

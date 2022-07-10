@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node -T ./src/index.ts"
   },
   "keywords": [],
   "author": "ericlee33",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4",
+    "@types/anyproxy": "^4.1.2",
+    "anyproxy": "^4.1.3"
+  }
 }
