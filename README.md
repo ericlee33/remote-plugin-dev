@@ -9,10 +9,11 @@
 ## 安装依赖
 
 ```sh
-
+安装 pnpm
 npm i -g pnpm （如果已经安装 pnpm 可以忽略此步）
 
-pnpm install 安装依赖
+安装依赖
+pnpm install
 ```
 
 ## 启动项目
@@ -24,7 +25,7 @@ https://chrome.google.com/webstore/search/switchyomega?hl=en-US
 
 ## 启动浏览器代理插件
 
-安装好代理插件之后，我们启动插件，**新增`new profile`**，我们随便起个名字，就叫`test`，**设置代理到本地代理服务器的端口**，这里我们使用上面设置的`11111`端口
+安装好代理插件之后，我们启动插件，**新增`new profile`**，我们随便起个名字，就叫`test_local`，**设置代理到本地代理服务器的端口**，这里我们使用上面设置的`11111`端口
 
 > 注意，要在`Bypass List`中配置`<-loopback>`，不然代理不到本地接口
 
