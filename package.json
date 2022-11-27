@@ -6,6 +6,6 @@
   "author": "ericlee33",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.3"
   }
 }

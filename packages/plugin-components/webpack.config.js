@@ -1,24 +1,21 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
+const webpack = require('webpack');
 module.exports = {
-  entry: {
-    main: './src/plugin.tsx',
-  },
   mode: 'development',
+  entry: {
+    remoteEntry: './src/plugin.tsx',
+  },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     libraryTarget: 'commonjs',
   },
+  plugins: [
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1,
+    }),
+  ],
   externals: {
     react: 'react',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-    new CleanWebpackPlugin(),
-  ],
   devServer: {
     hot: true,
     port: 9001,

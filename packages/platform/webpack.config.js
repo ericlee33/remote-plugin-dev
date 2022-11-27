@@ -38,7 +38,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'remote-component.config.js': __dirname + '/remote-component.config.js',
+      'lite-module-federation.config.js': path.resolve(
+        __dirname,
+        'lite-module-federation.config.js'
+      ),
     },
     extensions: ['js', 'ts', 'tsx', 'json', 'jsx'].map((ext) => `.${ext}`),
     fallback: {

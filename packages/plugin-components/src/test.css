@@ -1,0 +1,10 @@
+.sub-app-box {
+  height: 150px;
+  width: 150px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1a1a;
+  margin-left: 20px;
+}
